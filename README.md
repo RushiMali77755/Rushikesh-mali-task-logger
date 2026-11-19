@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Corporate Software Developer Task Logger
 
 A modern, enterprise-grade daily work tracking and task logging application built specifically for corporate software engineers.
@@ -189,3 +190,7 @@ All components strictly implement the **IBM Carbon Design System**:
 - Primary CTA background: `#0f62fe` (IBM Blue).
 - Subtle hairlines (`#e0e0e0` / `#393939` in dark mode) instead of box shadows.
 - Typography: IBM Plex Sans with light weights for display and `letter-spacing: 0.16px` on body text.
+=======
+# Rushikesh-mali-task-logger
+A modern, enterprise-grade daily work tracking and task logging application built specifically for corporate software engineers.
+>>>>>>> da541704b6027dabcf06d45691f1bb5cb47d70df
