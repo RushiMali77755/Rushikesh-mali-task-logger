@@ -1,0 +1,40 @@
+// ==========================================================================
+// Dark Mode Overrides — IBM Carbon Design System
+// ==========================================================================
+
+[data-theme="dark"] {
+  // Form elements
+  .form-select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath fill='%23f4f4f4' d='M8 11L3 6h10z'/%3E%3C/svg%3E");
+  }
+
+  // Badge adjustments
+  .badge-warning {
+    color: #f1c21b;
+  }
+
+  // Table
+  .data-table {
+    thead th {
+      background-color: var(--color-surface-2);
+    }
+  }
+
+  // Scrollbar
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-surface-1);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-surface-2);
+
+    &:hover {
+      background: var(--color-ink-subtle);
+    }
+  }
+}

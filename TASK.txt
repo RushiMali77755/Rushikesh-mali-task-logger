@@ -1,0 +1,52 @@
+ 
+
+
+ I want to develope a task logger application with astral as a backend and angular as a frontend.
+
+
+ basic features :
+
+
+ 1. Date 
+ 2. Login Time
+ 3. Logout Time
+ 4. Task Discription
+ 5. Task category - Logs Checking/Bug Fixing/ API Development/ Database Work/ Code Review/ Deployment / Testing/ Documentation/ Meetings/ Support / Production Issue
+ 6. Task Status - in progress / pending / Completed
+ 7. Task Start Time
+ 8. Task End Time
+ 9. Task Tags
+
+ 
+Basic Features :
+
+ User can put login Time & Logout Time once for day
+ User Can log multiple task for a day
+ for each task need to be give task category with task Status
+ For each Task Tags	Add tags such as Production, UAT, Development, Testings Checking, Log etc
+ For each task user need to give Task Start Time & Task End Time
+ for each task user must give Task Discription.
+ Automatically calculate Total Working Hours based on logout time − login time.
+ Add an overall comment about the day's work.
+ Missed Logout Reminder - Notify the user when logout/login time has not been recorded.
+
+Report :
+
+Daily Work Report	Complete breakdown of a particular day.
+Weekly Work Report	Work completed during the week.
+Monthly Work Report	Monthly working hours and task statistics.
+Category-wise Report	Time spent on logs, bug fixing, development, etc.
+Project-wise Report	Time spent on each project.
+Must able to download all report in excel.
+
+
+Development Flow : 
+
+Understand requirement -> sugget additions features -> Take approvel for addition of selective features -> Create a Plan & Project Discription -> Prepare To do Task list -> execute list one by one -> ask Questions if have confusion or abiguity & do not hallucinate. 
+
+ 
+
+
+
+
+ 

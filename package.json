@@ -1,0 +1,22 @@
+{
+  "name": "corporate-software-developer-task-logger",
+  "version": "1.0.0",
+  "description": "Corporate Developer Task Logger with Astro backend and Angular frontend following IBM Carbon Design System",
+  "scripts": {
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend start",
+    "build:backend": "npm --prefix backend run build",
+    "build:frontend": "npm --prefix frontend run build",
+    "build": "npm run build:backend && npm run build:frontend",
+    "start:backend": "node backend/dist/server/entry.mjs"
+  },
+  "keywords": [
+    "task-logger",
+    "astro",
+    "angular",
+    "ibm-carbon",
+    "developer-productivity"
+  ],
+  "author": "",
+  "license": "ISC"
+}

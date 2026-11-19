@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Production build outputs
+dist/
+*/dist/
+.astro/
+*/.astro/
+.angular/
+*/.angular/
+
+# Database files
+backend/data/*.db
+backend/data/*.db-wal
+backend/data/*.db-shm
+
+# Ignored user folder
+IGONRE_FILES/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System files
+.DS_Store
+Thumbs.db

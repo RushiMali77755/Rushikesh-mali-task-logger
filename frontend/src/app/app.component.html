@@ -1,0 +1,112 @@
+<div class="app-layout">
+  <!-- IBM Carbon Top Nav -->
+  <header class="top-nav">
+    <div class="nav-left">
+      <button class="hamburger-btn" (click)="toggleMobileNav()" aria-label="Toggle navigation">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M2 4h16v2H2V4zm0 5h16v2H2V9zm0 5h16v2H2v-2z" />
+        </svg>
+      </button>
+
+      <a routerLink="/" class="brand-link" (click)="closeMobileNav()">
+        <span class="brand-prefix">Dev</span>
+        <span class="brand-title">Task Logger</span>
+      </a>
+    </div>
+
+    <div class="nav-right">
+      <app-dark-mode-toggle></app-dark-mode-toggle>
+    </div>
+  </header>
+
+  <!-- Main Body with Sidebar + Content -->
+  <div class="app-body">
+    <!-- Sidebar -->
+    <aside class="sidebar" [class.open]="mobileNavOpen">
+      <nav class="sidebar-nav">
+        <a
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-item"
+          (click)="closeMobileNav()"
+        >
+          <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+          </svg>
+          <span>Dashboard</span>
+        </a>
+
+        <a
+          routerLink="/daily-log"
+          routerLinkActive="active"
+          class="nav-item"
+          (click)="closeMobileNav()"
+        >
+          <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 20h9"></path>
+            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+          </svg>
+          <span>Daily Log</span>
+        </a>
+
+        <a
+          routerLink="/history"
+          routerLinkActive="active"
+          class="nav-item"
+          (click)="closeMobileNav()"
+        >
+          <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <span>History</span>
+        </a>
+
+        <a
+          routerLink="/reports"
+          routerLinkActive="active"
+          class="nav-item"
+          (click)="closeMobileNav()"
+        >
+          <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>Reports & Export</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="sidebar-meta">
+          <div class="meta-label">Design System</div>
+          <div class="meta-val">IBM Carbon (0px)</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="content-area">
+      <!-- Reminder Notification Banner at Top -->
+      <app-reminder-banner></app-reminder-banner>
+
+      <div class="content-wrapper">
+        <router-outlet></router-outlet>
+      </div>
+
+      <!-- Inverted Charcoal Footer -->
+      <footer class="app-footer">
+        <div class="footer-inner">
+          <div class="footer-title">Task Logger &bull; Corporate Developer Edition</div>
+          <div class="footer-sub">Astro SSR Backend &bull; Angular 19 Frontend &bull; Excel Export &bull; Carbon Gray-100 Theme</div>
+        </div>
+      </footer>
+    </main>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+// ==========================================================================
+// IBM Carbon Design System — Design Tokens
+// ==========================================================================
+
+:root {
+  // ── Colors ──────────────────────────────────────────────────────────────
+  --color-primary: #0f62fe;
+  --color-primary-hover: #0050e6;
+  --color-primary-pressed: #002d9c;
+  --color-on-primary: #ffffff;
+  --color-ink: #161616;
+  --color-ink-muted: #525252;
+  --color-ink-subtle: #8c8c8c;
+  --color-canvas: #ffffff;
+  --color-surface-1: #f4f4f4;
+  --color-surface-2: #e0e0e0;
+  --color-hairline: #e0e0e0;
+  --color-hairline-strong: #161616;
+  --color-success: #24a148;
+  --color-warning: #f1c21b;
+  --color-error: #da1e28;
+  --color-info: #0f62fe;
+
+  // ── Typography ──────────────────────────────────────────────────────────
+  --font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --letter-spacing-body: 0.16px;
+  --letter-spacing-caption: 0.32px;
+
+  // ── Spacing (4 px grid) ─────────────────────────────────────────────────
+  --spacing-xxs: 4px;
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+  --spacing-section: 96px;
+
+  // ── Border radius ───────────────────────────────────────────────────────
+  --radius-none: 0px;
+}
+
+// ── Dark-mode overrides (applied via data-theme attribute) ────────────────
+[data-theme="dark"] {
+  --color-canvas: #161616;
+  --color-surface-1: #262626;
+  --color-surface-2: #393939;
+  --color-ink: #f4f4f4;
+  --color-ink-muted: #c6c6c6;
+  --color-ink-subtle: #8c8c8c;
+  --color-hairline: #393939;
+  --color-hairline-strong: #f4f4f4;
+  --color-on-primary: #ffffff;
+}
